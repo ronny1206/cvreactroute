@@ -1,38 +1,191 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.sidebar {
+  background-color: #b06044;
+  padding: 20px;
+  position: fixed;
+  height: 100%;
+  width: 200px;
+}
+
+.content {
+  margin-left: 240px; /* Tingkatkan margin kiri untuk memastikan ada jarak yang cukup */
+  padding: 20px;
+}
+
+.sidebar a {
+  display: block;
   color: white;
+  padding: 10px;
+  text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
+.sidebar a:hover {
+  background-color: #333;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-top: 0; /* Pastikan tidak ada margin atas berlebih */
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 10px 0;
+}
+
+.education-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.education-list li {
+  margin-bottom: 20px;
+}
+
+.education-list p {
+  margin-left: 24px; /* Agar deskripsi pendidikan sedikit menjorok ke dalam */
+}
+
+
+.skills-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skills-list li {
+  margin-bottom: 20px;
+}
+
+.skills-list p {
+  margin-left: 24px; /* Agar deskripsi keterampilan sedikit menjorok ke dalam */
+}
+
+.awards-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.awards-list li {
+  margin-bottom: 20px;
+}
+
+.awards-list p {
+  margin-left: 24px; /* Agar deskripsi penghargaan sedikit menjorok ke dalam */
+}
+
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Mengatur tinggi container untuk mengisi seluruh viewport */
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+
+.home-content {
+  flex: 1;
+  max-width: 45%;
+  text-align: left;
+}
+
+h2 {
+  font-size: 4rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.job-title {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.contact-info {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+  font-size: 1.2rem;
+}
+
+.contact-info li {
+  margin-bottom: 10px;
+}
+
+.social-media {
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+.social-media a {
+  color: #000;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.social-media a:hover {
+  text-decoration: underline;
+}
+
+.home-avatar {
+  flex: 1;
+  max-width: 40%;
+  text-align: center; /* Mengatur avatar dan tombol download di tengah-tengah */
+}
+
+.home-avatar img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.download-cv {
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.download-cv:hover {
+  background-color: #333;
+}
+
+
+.about-container {
+  padding: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.about-name {
+  font-size: 4rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #ff7e5f, #feb47b); /* Warna-warni namun tetap elegan */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 10px;
+}
+
+.about-phone {
+  font-size: 2.5rem;
+  color: #34495e; /* Warna yang elegan dan profesional */
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
 }
